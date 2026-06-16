@@ -125,6 +125,11 @@ def reset_enemy(w_frame, h_frame, score):
 cap = cv2.VideoCapture(0)
 
 ret, frame = cap.read()
+if not ret:
+    print("Gagal membuka kamera atau membaca frame pertama.")
+    cap.release()
+    cv2.destroyAllWindows()
+    exit()
 
 frame = cv2.flip(frame, 1)
 h_frame, w_frame, _ = frame.shape
