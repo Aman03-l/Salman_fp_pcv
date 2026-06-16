@@ -1,4 +1,4 @@
-# Platypus 🐾
+# Platypus 
 
 Game tembak-tembakan absurd yang dikendalikan cuma pakai gerakan tangan.  
 Kamu adalah pesawat segitiga yang terbang mengikuti telapak tangan, menembak musuh beku berwarna biru, sambil menghindari peluru ungu.  
@@ -6,7 +6,7 @@ Semua berjalan *real-time* lewat webcam, tanpa mouse atau keyboard buat main.
 
 ---
 
-## 📖 Deskripsi
+## Deskripsi
 
 Proyek ini adalah game interaktif berbasis visi komputer yang memanfaatkan kamera laptop/webcam.  
 Pemain mengontrol pesawat dengan menggerakkan tangan di depan kamera, dan gestur jari digunakan untuk menembak, mengaktifkan slow motion, serta mengendalikan tempo permainan.  
@@ -14,20 +14,20 @@ Game dibuat menggunakan **Python**, **OpenCV**, **MediaPipe**, dan **NumPy** –
 
 ---
 
-## 🎮 Fitur
+## Fitur
 
-- 🖐️ **Hand tracking real-time** – posisi tangan dideteksi setiap frame, pergerakan dihaluskan (*smoothing*) agar nyaman dimainkan.
-- 🔫 **Menembak otomatis** – tembakan muncul saat menunjukkan 3 atau 5 jari.
-- 🐢 **Slow motion** – musuh dan peluru melambat ketika pemain menunjukkan 4 atau 5 jari.
-- 💥 **Sistem skor & level** – setiap musuh yang hancur memberi 1 poin, tiap 10 poin level naik, musuh makin kuat.
-- ❤️ **HP & invincibility** – pemain punya 5 nyawa; setelah kena damage, ada jeda 1 detik kebal.
-- 🎨 **Sprite overlay manual** – pesawat digambar poligon *pure NumPy*, lalu ditempelkan ke frame dengan **alpha blending custom** (tanpa fungsi built-in OpenCV).
-- 📊 **UI On-screen** – panel hitam menampilkan skor, level, dan jumlah jari yang terdeteksi.
-- 🕹️ **Tiga state game** – Start Screen, Playing, Game Over.
+- **Hand tracking real-time** – posisi tangan dideteksi setiap frame, pergerakan dihaluskan (*smoothing*) agar nyaman dimainkan.
+- **Menembak otomatis** – tembakan muncul saat menunjukkan 3 atau 5 jari.
+- **Slow motion** – musuh dan peluru melambat ketika pemain menunjukkan 4 atau 5 jari.
+- **Sistem skor & level** – setiap musuh yang hancur memberi 1 poin, tiap 10 poin level naik, musuh makin kuat.
+- **HP & invincibility** – pemain punya 5 nyawa; setelah kena damage, ada jeda 1 detik kebal.
+- **Sprite overlay manual** – pesawat digambar poligon *pure NumPy*, lalu ditempelkan ke frame dengan **alpha blending custom**.
+- **UI On-screen** – panel hitam menampilkan skor, level, dan jumlah jari yang terdeteksi.
+- **Tiga state game** – Start Screen, Playing, Game Over.
 
 ---
 
-## ✋ Kontrol Gestur
+## Kontrol Gestur
 
 | Jumlah Jari Terdeteksi | Aksi                           |
 |------------------------|--------------------------------|
@@ -42,7 +42,7 @@ Game dibuat menggunakan **Python**, **OpenCV**, **MediaPipe**, dan **NumPy** –
 
 ---
 
-## ⚙️ Cara Kerja (Pipeline)
+## Cara Kerja (Pipeline)
 
 ### 1. Akuisisi Kamera
 Webcam diakses menggunakan **cv2.VideoCapture(0)**.  
